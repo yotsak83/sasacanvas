@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta property="og:title" content="Yota Sasaki SASACANVAS" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://yotsak.verse.jp/draw/sasacanvas.html" />
+<meta property="og:image" content="http://yotsak.verse.jp/draw/paint.jpg" />
+<meta property="og:site_name" content="SASACANVAS" />
+<meta property="fb:admins" content="100000990330426" />
+
+<title>SASACANVAS</title>
+
+<link rel="stylesheet" href="css/htmlmobilify.css">
+<link rel="stylesheet" href="jquery-ui-1.8.21.custom.css">
+<link rel="stylesheet" href="js/farbtastic/farbtastic.css" type="text/css" />
+<link rel="stylesheet" href="css/sasacanvas.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="jquery-ui-1.8.21.custom.min.js"></script>
+<script type="text/javascript" src="js/farbtastic/farbtastic.js"></script>
+<script type="text/javascript" src="js/rgb/rgbcolor.js"></script>
+
+
+ <script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+  $('#picker').farbtastic('#color');
+  });
+ </script>
+<script type="text/javascript" src="js/sasacanvas.js"></script>
+
+</head>
+<body>
+<div id="wrapper">
+<div id="wrapper1">
+<canvas id="thecanvas" width="900" height="600">お使いのブラウザはHTML5のCanvas要素に対応していません。</canvas>
+<!--<ul>
+<li style="background-color:#000"></li>
+<li style="background-color:#f00"></li>
+<li style="background-color:#0f0"></li>
+<li style="background-color:#00f"></li>
+<li style="background-color:#ff0"></li>
+</ul>-->
+</div><!--wrapper1-->
+<div id="wrapper2">
+<p>BRUSH SIZE▼</p>
+<div id="slider" ></div>
+<p>TRANSPARENCY▼</p>
+<div id="slider2"></div>
+<div id="button">
+				<div id="b_1" class="buttons">
+				<input type="button" id="save" value="DOWNLOAD" />
+				
+				<input type="button" id="clear" value="CLEAR" />
+	
+				<input type="button" id="undo" value="UNDO" />
+				</div>
+				<div id="inp_1" class="buttons">
+				<input id="brush1" type="radio" checked="checked" name="brush">PEN
+				</div>
+     			<div id="inp_2" class="buttons">
+				<input id="brush4" type="radio" name="brush">BRUSH　(WATER PAINT)
+				</div>
+				<div id="inp_3" class="buttons">
+				<input id="miter" type="radio" name="brush">BRUSH (OIL PAINT)
+				</div>
+				<div id="inp_4" class="buttons">
+				<input id="brush2" type="radio" name="brush">MARKER (BLUR LEVEL 1)
+				</div>
+				<div id="inp_5" class="buttons">
+				<input id="brush3" type="radio" name="brush">MARKER (BLUR LEVEL 2)
+				</div>
+
+				<div id="inp_6" class="buttons">
+				<input id="eraser" type="radio" name="brush">ERASER
+				</div>
+				<div id="inp_7" class="buttons">
+				<input id="spuit" type="radio" name="brush">COLOR SPUIT
+				</div>
+
+
+
+<div id="colorpicker-div">
+<form action="" style="width: 305px;">
+  <div class="form-item"><label for="color">Color:</label><input type="text" id="color" name="color" value="#123456" /></div><div id="picker"></div>
+</form>
+</div>
+<!--<form><input type="text" id="color" name="color" value="#123456" /></form>
+ <div id="colorpicker"></div>-->
+<!--<input type="text" id="color" name="color" value="#123456" />
+<div id="colorpicker"></div>-->
+</div><!--button-->
+</div><!--wrapper2-->
+</div><!--wrapper-->
+</body>
+</html>

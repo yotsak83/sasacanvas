@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    margin: 20px;
+	width:auto;
+	}
+
+div#wrapper{
+
+   width:1230px;
+
+   }
+
+div#wrapper1{
+	float:left;
+	
+	}
+div#wrapper2{
+
+    float:right;
+	width:305px;
+
+
+    }
+
+canvas {
+    top: 20px;
+    left: 20px;
+    border: 1px solid #ccc;
+	box-shadow:5px 5px 10px #666;
+	
+	
+}
+#button {
+    /*position: relative;
+    top: -55px;
+    left: 345px;
+	*/
+	
+}
+#save {
+    /*font-size: 120%;
+    width: 130px;
+    height: 50px;*/
+}
+#clear {
+    /*font-size: 120%;
+    width: 80px;
+    height: 50px;*/
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+li {
+    /*cursor:pointer;
+    cursor:hand;
+    display:inline-block;
+    border: 1px solid #000;
+    width: 50px;
+    height: 50px;*/
+}
+
+#slider{
+	width:300px;
+	margin:2px;
+	
+	}
+#slider2{
+	width:300px;
+	margin:2px;
+	
+	}

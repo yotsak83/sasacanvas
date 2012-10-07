@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html.mobilify {
+margin-top: 118px !important;
+}
+.mobilify body {
+width: 320px;
+position: relative;
+left: -moz-calc(50% - 160px);
+}
+.mobilify body:before {
+content: "";
+background: url(http://people.mozilla.org/~mclaypotch/nexus_s_frame.png);
+display: block;
+width: 408px;
+height: 785px;
+border: 500px solid black;
+position: fixed;
+top: -510px;
+left: -moz-calc(50% - 703px);
+z-index: 9999;
+pointer-events: none;
+}
+html.mobilify:before, html.mobilify:after {
+content: "";
+display: block;
+position: fixed;
+height: 100%;
+width: -moz-calc(50% - 160px);
+background: black;
+top: 0;
+left: 0;
+}
+html.mobilify:after {
+right: 0;
+left: auto;
+}
