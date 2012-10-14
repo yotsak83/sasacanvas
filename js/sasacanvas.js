@@ -237,12 +237,19 @@ $(function() {
 	});
    //canvas save
     $('#save').click(function() {
-        var d = canvas.toDataURL('image/png');
-        //d = d.replace('image/png', 'image/content-disposition');
-		window.open(d, 'save');
-		    });
+      //  var d = canvas.toDataURL('image/png');
+                 //d = d.replace('image/png', 'image/content-disposition');
+		//window.open(d, 'save');
+
+    var paint_data = canvas.toDataURL('image/png');
+    
+	paint_data = paint_data.replace(/^.*,/, '');
 	
-
-
+	var curFrm = document.sendform;
+    
+	curFrm.paintdata.value = paint_data;
+    curFrm.submit();
+    return;
+    });
 
 });

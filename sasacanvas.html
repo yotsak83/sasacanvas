@@ -49,8 +49,12 @@
 <div id="slider2"></div>
 <div id="button">
 				<div id="b_1" class="buttons">
-				<input type="button" id="save" value="DOWNLOAD" />
-				
+                
+                <form action="sasacanvas.php" method="POST" name="sendform">
+				    <input type="button" id="save" value="DOWNLOAD" />
+                    <input type="hidden" name="paintdata" value="" />
+				</form>
+                
 				<input type="button" id="clear" value="CLEAR" />
 	
 				<input type="button" id="undo" value="UNDO" />
