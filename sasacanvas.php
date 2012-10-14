@@ -1,3 +1,3 @@
 <?php
-
-print_r ($_POST);
+echo "Finally Flying Toaster is back!";
+//print_r ($_POST);
